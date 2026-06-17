@@ -17,12 +17,29 @@ No database, Docker, Node, GPU, hosted embedding service, or OpenAI API key is r
 
 ## Setup
 
+Run these commands one at a time, in order. Copy one command, run it, wait for it to finish, then copy the next command.
+
 ```bash
 git clone <repo-url>
+```
+
+```bash
 cd <repo-folder>
+```
+
+```bash
 python3 -m venv .venv
+```
+
+```bash
 source .venv/bin/activate
+```
+
+```bash
 python -m pip install --upgrade pip
+```
+
+```bash
 python -m pip install -e ".[dev]"
 ```
 
@@ -30,10 +47,25 @@ On Windows PowerShell:
 
 ```powershell
 git clone <repo-url>
+```
+
+```powershell
 cd <repo-folder>
+```
+
+```powershell
 py -m venv .venv
+```
+
+```powershell
 .\.venv\Scripts\Activate.ps1
+```
+
+```powershell
 python -m pip install --upgrade pip
+```
+
+```powershell
 python -m pip install -e ".[dev]"
 ```
 

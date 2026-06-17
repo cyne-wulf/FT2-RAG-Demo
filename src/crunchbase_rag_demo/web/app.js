@@ -143,5 +143,3 @@ fetch("/api/status")
     }
   })
   .catch(() => setStatus("Status unavailable", "#a13d2d"));
-
-retrieve();
