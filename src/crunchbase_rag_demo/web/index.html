@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Crunchbase RAG</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="topbar" aria-label="Run status">
+        <div>
+          <p class="eyebrow">2013 Crunchbase</p>
+          <h1>RAG Console</h1>
+        </div>
+        <div class="status-strip" id="statusStrip">
+          <span class="status-dot"></span>
+          <span id="statusText">Checking local index</span>
+        </div>
+      </section>
+
+      <section class="query-panel" aria-label="Prompt interface">
+        <label for="question">Ask about companies, markets, or use cases</label>
+        <div class="prompt-row">
+          <textarea id="question" rows="4">What companies in this snapshot are related to analytics?</textarea>
+          <div class="actions">
+            <button id="searchButton" type="button">Retrieve</button>
+            <button id="askButton" type="button" class="primary">Ask Codex</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="pipeline" aria-label="RAG pipeline">
+        <div class="stage active">
+          <span>1</span>
+          <strong>Question</strong>
+          <small>Natural language intent</small>
+        </div>
+        <div class="rail"></div>
+        <div class="stage">
+          <span>2</span>
+          <strong>Retrieve</strong>
+          <small>Rank local records</small>
+        </div>
+        <div class="rail"></div>
+        <div class="stage">
+          <span>3</span>
+          <strong>Ground</strong>
+          <small>Assemble context</small>
+        </div>
+        <div class="rail"></div>
+        <div class="stage">
+          <span>4</span>
+          <strong>Answer</strong>
+          <small>Codex OAuth session</small>
+        </div>
+      </section>
+
+      <section class="workspace">
+        <section class="results-panel" aria-label="Retrieved records">
+          <div class="panel-heading">
+            <p class="eyebrow">Retrieved Records</p>
+            <strong id="resultCount">0 matches</strong>
+          </div>
+          <div id="results" class="results"></div>
+        </section>
+
+        <section class="inspector" aria-label="RAG details">
+          <div class="tabs" role="tablist" aria-label="Details">
+            <button class="tab active" type="button" data-view="promptView">Prompt</button>
+            <button class="tab" type="button" data-view="answerView">Answer</button>
+          </div>
+          <pre id="promptView" class="detail-view active"></pre>
+          <div id="answerView" class="detail-view answer"></div>
+        </section>
+      </section>
+    </main>
+    <script src="/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+[project]
+name = "crunchbase-rag-demo"
+version = "0.1.0"
+description = "A local RAG demo using the 2013 Crunchbase dataset."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.2.0",
+]
+
+[project.scripts]
+crunchbase-rag = "crunchbase_rag_demo.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
