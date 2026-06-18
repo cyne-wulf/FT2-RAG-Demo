@@ -1,4 +1,4 @@
-# Crunchbase RAG Demo
+# FT2 RAG Demo
 
 A minimal local RAG app for the October 2013 Crunchbase snapshot.
 

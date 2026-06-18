@@ -1,7 +1,7 @@
 [project]
 name = "crunchbase-rag-demo"
 version = "0.1.0"
-description = "A local RAG demo using the 2013 Crunchbase dataset."
+description = "Module 2 local RAG demo using the 2013 Crunchbase dataset."
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = []
