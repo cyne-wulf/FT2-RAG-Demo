@@ -20,11 +20,11 @@ No database, Docker, Node, GPU, hosted embedding service, or OpenAI API key is r
 Run these commands one at a time, in order. Copy one command, run it, wait for it to finish, then copy the next command.
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/cyne-wulf/FT2-RAG-Demo
 ```
 
 ```bash
-cd <repo-folder>
+cd FT2-RAG-Demo
 ```
 
 ```bash
@@ -46,11 +46,11 @@ python -m pip install -e ".[dev]"
 On Windows PowerShell:
 
 ```powershell
-git clone <repo-url>
+git clone https://github.com/cyne-wulf/FT2-RAG-Demo
 ```
 
 ```powershell
-cd <repo-folder>
+cd FT2-RAG-Demo
 ```
 
 ```powershell
